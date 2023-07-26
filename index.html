@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600&display=swap" rel="stylesheet">
+	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css" rel="stylesheet">
+
+	<link href="css/styles.css" rel="stylesheet">
+	<title> Casamento - F | A </title>
+</head>
+<body>
+	<header>
+		<h2><a class="logo" href="#">Franciene & Adriano</a></h2>
+		<nav>
+			<ul>
+				<li>
+					<a href="#historia">Nossa História</a>
+				</li>
+				<li>
+					<a href="#confirmar-presenca">Confirmar Presença</a>
+				</li>
+				<li>
+					<a href="#presentes">Lista de Presentes</a>
+				</li>
+				<li>
+					<a href="#localizacao">Localização</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+	<section class="banner">
+		<div class="banner-img"></div>
+	</section>
+	<section class="nossa-historia" id="historia">
+		<h3 class="titulo-sessao">Nossa História</h3>
+		<ul class="conteudo-historia">
+			<li class="historia-esquerda"><img src="images/dri-ene.jpg" alt="Foto de Adriano e Franciene"></li>
+			<li class="historia-direita">
+				<p>Adriano e Franciene se conheceram por um aplicativo de relacionamento, Adriano decidiu ir até o Maranhão conhece-lá pessoalmente. Sim, eles confirmaram os sentimentos que tinham um pelo outro, e embarcaram na aventura de um namoro à distância. Não foi fácil, mas conseguiram se manter firmes e cultivar o amor entre eles. Agora decidiram tomar um decisão que irá uni-los para sempre. O matrimônio!</p>
+			</li>
+		</ul>
+	</section>
+	<section class="confirmar-presenca" id="confirmar-presenca">
+		<h3 class="titulo-sessao">Você confirma sua presença ?</h3>
+		<ul class="conteudo-presenca">
+			<li>
+				<form class="form-confirmacao">
+					<label for="nome">Nome:</label>
+					<input type="text" id="nome" name="nome" placeholder="Nome Completo" required>
+			
+					<label for="confirmacao">Confirmação de Presença:</label>
+					<select id="confirmacao" name="confirmacao" required>
+						<option value="" disabled selected>Selecione...</option>
+						<option value="sim">Confirmo minha presença</option>
+						<option value="nao">Não poderei comparecer</option>
+					</select>
+			
+					<button type="submit">Enviar</button>
+				</form>
+			</li>
+		</ul>
+	</section>
+	<section class="lista-presentes" id="presentes">
+		<h3 class="titulo-sessao">Lista de Presentes</h3>
+		<ul class="conteudo-presentes">
+			<li>
+				<form class="form-presentes">
+					<input type="checkbox" name="presente" value="aparelho-jantar"> Aparelho de Jantar<br>
+					<input type="checkbox" name="presente" value="liquidificador"> Liquidificador<br>
+					<input type="checkbox" name="presente" value="faqueiro"> Faqueiro<br>
+					<input type="checkbox" name="presente" value="jogo-copos"> Jogo de Copos<br>
+					<input type="checkbox" name="presente" value="jogo-panelas"> Jogo de Panelas<br>
+					<input type="checkbox" name="presente" value="microondas"> Microondas<br>
+					<input type="checkbox" name="presente" value="ferro-passar"> Ferro de Passar Roupas<br>
+					<input type="checkbox" name="presente" value="conjunto-tacas"> Conjunto de Taças<br>
+					<input type="checkbox" name="presente" value="jogo-cama"> Jogo de Cama<br>
+					<input type="checkbox" name="presente" value="jogo-banho"> Jogo de Banho<br>
+					<input type="checkbox" name="presente" value="conjunto-talheres"> Conjunto de talheres<br>
+					<input type="checkbox" name="presente" value="aspirador"> Aspirador de Pó<br>
+					<input type="checkbox" name="presente" value="jogo-assadeiras"> Jogo de Assadeiras<br>
+					<input type="checkbox" name="presente" value="garrafa-termica"> Garrafa Térmica<br>
+					<input type="checkbox" name="presente" value="lixeira-cozinha"> Lixeira de Cozinha<br>
+					<input type="checkbox" name="presente" value="conjunto-potes"> Conjunto de Potes Herméticos<br>
+					<input type="checkbox" name="presente" value="batedeira"> Batedeira<br>
+					<input type="checkbox" name="presente" value="jogo-facas"> Jogo de Facas<br>
+					<input type="checkbox" name="presente" value="tv"> Televisão<br>
+					<input type="checkbox" name="presente" value="maquina-lavar"> Máquina de Lavar<br>
+					<input type="checkbox" name="presente" value="sofa"> Sofá<br>
+					<input type="checkbox" name="presente" value="rack"> Rack<br>
+					<input type="checkbox" name="presente" value="cama-casal"> Cama de Casal<br>
+					<input type="checkbox" name="presente" value="conjunto-mesa"> Conjunto de Cadeiras e Mesa pequeno<br>
+					<input type="checkbox" name="presente" value="guarda-roupa"> Guarda-Roupa<br>
+				</form>
+				<button class="botao-presentes" type="button" onclick="enviarPresentes()">Enviar</button>
+			</li>
+		</ul>
+	</section>
+	<section class="localizacao" id="localizacao">
+		<h3 class="titulo-sessao">Localização</h3>
+		<ul class="conteudo-localizacao">
+			<li>
+				<div class="img"><img alt="Foto Sítio Umbuzeiro" src="images/sitio-umbuzeiro.png"></div>
+				<h3>Local</h3>
+				<p>Sítio Umbuzeiro, Av. Tiradentes, N°175, Vila de Abrantes, Camaçari - BA </p>
+			</li>		
+		</ul>
+	</section>
+	<footer class="rodape">
+        <p>Website feito por Adriano de Paula - Todos os direitos reservados</p>
+    </footer>
+</body>
+</html>

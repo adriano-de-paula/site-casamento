@@ -1,0 +1,251 @@
+/* Reset de estilos */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	list-style: none;
+  }
+  
+  /* Estilos gerais */
+  body {
+	font-family: 'Oswald', sans-serif;
+	line-height: 1.6;
+	color: #333;
+	background-color: #f6f6f6;
+  }
+  
+  header {
+	background-color: #8b7eb0;
+	padding: 1rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+  }
+  
+  nav ul {
+	list-style: none;
+	display: flex;
+  }
+  
+  nav ul li {
+	margin-left: 1rem;
+  }
+  
+  nav ul li a {
+	color: #fff;
+	text-decoration: none;
+	padding: 0.5rem 1rem;
+  }
+  
+  .banner {
+	background-color: #a28dbf;
+	text-align: center;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+  }
+  
+  .banner-img {
+	background-image: url(../images/banner_casamento_FA.png);
+	background-size: cover; 
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 100%;
+	height: 100%; 
+  }
+   
+  .nossa-historia {
+	background-color: #d1c1e0;
+	padding: 3rem;
+  }
+
+  .conteudo-historia {
+	display: flex; 
+	justify-content: center; 
+	align-items: center; 
+  }
+  
+  .historia-esquerda img {
+	width: 300px;
+	height: 300px;
+	border-radius: 50%;
+	object-fit: cover;
+	object-position: center;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .historia-direita {
+	flex: 1; 
+	padding: 0 20px; 
+  }
+  
+  .historia-direita p {
+	text-align: center;
+  }
+  
+  .confirmar-presenca {
+	background-color: #e8e2f1;
+	padding: 3rem;
+  }
+  
+  .lista-presentes {
+	background-color: #f2edfc;
+	padding: 3rem;
+  }
+
+  .conteudo-presentes {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 0;
+  }
+  
+  .form-presentes {
+	list-style: none;
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	max-width: 800px;
+	margin: 0 auto;
+  }
+  
+  .form-presentes li {
+	width: calc(33.33% - 10px); 
+	margin-bottom: 20px;
+  }
+  
+  .form-presentes input[type="checkbox"] {
+	margin-bottom: 5px;
+  }
+
+  .form-presentes li:not(:nth-child(3n)) {
+	margin-right: 10px;
+  }
+
+  .botao-presentes {
+	background-color: #8b7eb0;
+	color: #fff;
+	border: none;
+	padding: 0.5rem 1rem;
+	cursor: pointer;
+  }
+  
+  .botao-presentes:hover {
+	background-color: #6e5a8d;
+  }
+  
+  .localizacao {
+	background-color: #d1c1e0;
+	padding: 3rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+  }
+
+  .conteudo-localizacao {
+	max-width: 800px;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-top: 1rem;
+  }
+  
+  .conteudo-localizacao p {
+	margin-top: 1rem;
+  }
+
+  .conteudo-localizacao li {
+	flex: 1;
+	text-align: center;
+	margin: 10px;
+  }
+  
+  .img img {
+	width: 300px;
+	height: 300px;
+	border-radius: 2px;
+	object-fit: cover;
+	object-position: center;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+
+  h3 {
+	text-align: center; 
+	margin-bottom: 1rem; 
+  }
+  
+  .titulo-sessao {
+	text-align: center;
+	margin-bottom: 2rem;
+	font-family: 'Dancing Script', cursive;
+  }
+  
+  /* Estilos específicos */
+  h1, h2, h3, h4, h5 {
+	font-family: 'Dancing Script', cursive;
+  }
+  
+  h1 {
+	font-size: 3rem;
+  }
+  
+  h2 {
+	font-size: 2.5rem;
+  }
+  
+  h3 {
+	font-size: 2rem;
+  }
+  
+  .logo {
+	color: #fff;
+	text-decoration: none;
+	font-size: 2rem;
+  }
+  
+ 
+  
+  .form-confirmacao {
+	display: flex;
+	flex-direction: column;
+	max-width: 300px;
+	margin: 0 auto;
+  }
+  
+  .form-confirmacao label, .form-presentes label {
+	margin-bottom: 0.5rem;
+  }
+  
+  .form-confirmacao input[type="text"],
+  .form-confirmacao select {
+	padding: 0.5rem;
+	margin-bottom: 1rem;
+	border: 1px solid #ccc;
+  }
+  
+  .form-confirmacao button {
+	background-color: #8b7eb0;
+	color: #fff;
+	border: none;
+	padding: 0.5rem 1rem;
+	cursor: pointer;
+  }
+  
+  .form-confirmacao button:hover {
+	background-color: #6e5a8d;
+  }
+  
+  .rodape {
+	background-color: #8b7eb0;
+	padding: 1rem;
+	text-align: center;
+	color: #fff;
+  }
+  
+  
