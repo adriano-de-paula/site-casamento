@@ -1,113 +1,120 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-	<meta charset="UTF-8">
-	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600&display=swap" rel="stylesheet">
-	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<link href="css/styles.css" rel="stylesheet">
-	<title> Casamento - F | A </title>
+    <link rel="icon" href="favicon/favicon-16x16.png">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <script defer src="js/script.js"></script>
+
+    <title>Franciene & Adriano</title>
 </head>
 <body>
-	<header>
-		<h2><a class="logo" href="#">Franciene & Adriano</a></h2>
-		<nav>
-			<ul>
-				<li>
-					<a href="#historia">Nossa História</a>
-				</li>
-				<li>
-					<a href="#confirmar-presenca">Confirmar Presença</a>
-				</li>
-				<li>
-					<a href="#presentes">Lista de Presentes</a>
-				</li>
-				<li>
-					<a href="#localizacao">Localização</a>
-				</li>
+    <header>
+		<nav class="navbar">
+			<div class="logo">Franciene & Adriano</div>
+			<ul class="menu">
+				<li><a href="#nossa-historia">Nossa História</a></li>
+                <li><a href="#confirmar-presenca">Confirma Presença</a></li>
+                <li><a href="#lista-presentes">Lista de Presentes</a></li>
+            	<li><a href="#localizacao">Localização</a></li>
 			</ul>
 		</nav>
+        <div class="banner">
+            <img src="images/banner_casamento_FA.png" alt="Banner do Site">
+        </div>
 	</header>
-	<section class="banner">
-		<div class="banner-img"></div>
-	</section>
-	<section class="nossa-historia" id="historia">
-		<h3 class="titulo-sessao">Nossa História</h3>
-		<ul class="conteudo-historia">
-			<li class="historia-esquerda"><img src="images/dri-ene.jpg" alt="Foto de Adriano e Franciene"></li>
-			<li class="historia-direita">
-				<p>Adriano e Franciene se conheceram por um aplicativo de relacionamento, Adriano decidiu ir até o Maranhão conhece-lá pessoalmente. Sim, eles confirmaram os sentimentos que tinham um pelo outro, e embarcaram na aventura de um namoro à distância. Não foi fácil, mas conseguiram se manter firmes e cultivar o amor entre eles. Agora decidiram tomar um decisão que irá uni-los para sempre. O matrimônio!</p>
-			</li>
-		</ul>
-	</section>
-	<section class="confirmar-presenca" id="confirmar-presenca">
-		<h3 class="titulo-sessao">Você confirma sua presença ?</h3>
-		<ul class="conteudo-presenca">
-			<li>
-				<form class="form-confirmacao">
-					<label for="nome">Nome:</label>
-					<input type="text" id="nome" name="nome" placeholder="Nome Completo" required>
-			
-					<label for="confirmacao">Confirmação de Presença:</label>
-					<select id="confirmacao" name="confirmacao" required>
-						<option value="" disabled selected>Selecione...</option>
-						<option value="sim">Confirmo minha presença</option>
-						<option value="nao">Não poderei comparecer</option>
-					</select>
-			
-					<button type="submit">Enviar</button>
-				</form>
-			</li>
-		</ul>
-	</section>
-	<section class="lista-presentes" id="presentes">
-		<h3 class="titulo-sessao">Lista de Presentes</h3>
-		<ul class="conteudo-presentes">
-			<li>
-				<form class="form-presentes">
-					<input type="checkbox" name="presente" value="aparelho-jantar"> Aparelho de Jantar<br>
-					<input type="checkbox" name="presente" value="liquidificador"> Liquidificador<br>
-					<input type="checkbox" name="presente" value="faqueiro"> Faqueiro<br>
-					<input type="checkbox" name="presente" value="jogo-copos"> Jogo de Copos<br>
-					<input type="checkbox" name="presente" value="jogo-panelas"> Jogo de Panelas<br>
-					<input type="checkbox" name="presente" value="microondas"> Microondas<br>
-					<input type="checkbox" name="presente" value="ferro-passar"> Ferro de Passar Roupas<br>
-					<input type="checkbox" name="presente" value="conjunto-tacas"> Conjunto de Taças<br>
-					<input type="checkbox" name="presente" value="jogo-cama"> Jogo de Cama<br>
-					<input type="checkbox" name="presente" value="jogo-banho"> Jogo de Banho<br>
-					<input type="checkbox" name="presente" value="conjunto-talheres"> Conjunto de talheres<br>
-					<input type="checkbox" name="presente" value="aspirador"> Aspirador de Pó<br>
-					<input type="checkbox" name="presente" value="jogo-assadeiras"> Jogo de Assadeiras<br>
-					<input type="checkbox" name="presente" value="garrafa-termica"> Garrafa Térmica<br>
-					<input type="checkbox" name="presente" value="lixeira-cozinha"> Lixeira de Cozinha<br>
-					<input type="checkbox" name="presente" value="conjunto-potes"> Conjunto de Potes Herméticos<br>
-					<input type="checkbox" name="presente" value="batedeira"> Batedeira<br>
-					<input type="checkbox" name="presente" value="jogo-facas"> Jogo de Facas<br>
-					<input type="checkbox" name="presente" value="tv"> Televisão<br>
-					<input type="checkbox" name="presente" value="maquina-lavar"> Máquina de Lavar<br>
-					<input type="checkbox" name="presente" value="sofa"> Sofá<br>
-					<input type="checkbox" name="presente" value="rack"> Rack<br>
-					<input type="checkbox" name="presente" value="cama-casal"> Cama de Casal<br>
-					<input type="checkbox" name="presente" value="conjunto-mesa"> Conjunto de Cadeiras e Mesa pequeno<br>
-					<input type="checkbox" name="presente" value="guarda-roupa"> Guarda-Roupa<br>
-				</form>
-				<button class="botao-presentes" type="button" onclick="enviarPresentes()">Enviar</button>
-			</li>
-		</ul>
-	</section>
-	<section class="localizacao" id="localizacao">
-		<h3 class="titulo-sessao">Localização</h3>
-		<ul class="conteudo-localizacao">
-			<li>
-				<div class="img"><img alt="Foto Sítio Umbuzeiro" src="images/sitio-umbuzeiro.png"></div>
-				<h3>Local</h3>
-				<p>Sítio Umbuzeiro, Av. Tiradentes, N°175, Vila de Abrantes, Camaçari - BA </p>
-			</li>		
-		</ul>
-	</section>
-	<footer class="rodape">
-        <p>Website feito por Adriano de Paula - Todos os direitos reservados</p>
-    </footer>
+	<main>
+		<section class="nossa-historia" id="nossa-historia">
+            <div class="foto-casal">
+                <img src="images/dri-ene.jpg" alt="Foto do Casal">
+            </div>
+            <div class="historia-texto">
+                <h2>Nossa História</h2>
+                <p>Adriano e Franciene se conheceram por meio de um aplicativo de relacionamento. Após um período de conversas e conexão virtual, Adriano tomou a decisão de viajar até o Maranhão para conhecê-la pessoalmente. Durante esse encontro, confirmaram os profundos sentimentos que nutriam um pelo outro e, assim, deram início a um relacionamento à distância. Embora tenha sido um desafio, conseguiram manter-se firmes e cultivar o amor que os unia. Agora, determinados, decidiram dar um passo importante que os unirá para sempre: o matrimônio!</p>
+            </div>
+        </section>
+
+        <section class="confirmar-presenca" id="confirmar-presenca">
+            <h2>Você confirma sua presença ?</h2>
+
+            <form class="form-confirmacao" id="form-confirmacao">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" placeholder="Nome Completo" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" placeholder="exemplo@email.com" required>
+        
+                <label for="confirmacao">Confirmação de Presença:</label>
+                <select id="confirmacao" name="confirmacao" required>
+                    <option value="" disabled selected>Selecione...</option>
+                    <option value="sim">Confirmo minha presença</option>
+                    <option value="nao">Não poderei comparecer</option>
+                </select>
+        
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+        <section class="lista-presentes" id="lista-presentes">
+            <h2>Lista de Presentes</h2>
+            <p>Marque aqui o(s) presente(s) que você quer nos dar:</p>
+            <ul class="presentes">
+                <div class="coluna">
+                    <li><input type="checkbox" value="aparelho-jantar"> Aparelho de Jantar</li>
+                    <li><input type="checkbox" value="liquidificador"> Liquidificador</li>
+                    <li><input type="checkbox" value="faqueiro"> Faqueiro</li>
+                    <li><input type="checkbox" value="jogo-copos"> Jogo de Copos</li>
+                    <li><input type="checkbox" value="jogo-panelas"> Jogo de Panelas</li>
+                    <li><input type="checkbox" value="microondas"> Microondas</li>
+                    <li><input type="checkbox" value="ferro-passar"> Ferro de Passar Roupas</li>
+                    <li><input type="checkbox" value="conjunto-tacas"> Conjunto de Taças</li>
+                    <li><input type="checkbox" value="jogo-cama"> Jogo de Cama</li>
+                    <li><input type="checkbox" value="jogo-banho"> Jogo de Banho</li>
+                    <li><input type="checkbox" value="conjunto-talheres"> Conjunto de talheres</li>
+                    <li><input type="checkbox" value="aspirador"> Aspirador de Pó</li>
+                    <li><input type="checkbox" value="jogo-assadeiras"> Jogo de Assadeiras</li>
+                    <li><input type="checkbox" value="garrafa-termica"> Garrafa Térmica</li>
+                    <li><input type="checkbox" value="conjunto-mesa"> Conjunto de Cadeiras e Mesa pequeno</li>
+                </div>              
+                <div class="coluna">
+                    <li><input type="checkbox" value="lixeira-cozinha"> Lixeira de Cozinha</li>
+                    <li><input type="checkbox" value="conjunto-potes"> Conjunto de Potes Herméticos</li>
+                    <li><input type="checkbox" value="batedeira"> Batedeira</li>
+                    <li><input type="checkbox" value="jogo-facas"> Jogo de Facas</li>
+                    <li><input type="checkbox" value="tv"> Televisão</li>
+                    <li><input type="checkbox" value="maquina-lavar"> Máquina de Lavar</li>
+                    <li><input type="checkbox" value="sofa"> Sofá</li>
+                    <li><input type="checkbox" value="rack"> Rack</li>
+                    <li><input type="checkbox" value="cama-casal"> Cama de Casal</li>
+                    <li><input type="checkbox" value="sanduicheira"> Sanduicheira</li>
+                    <li><input type="checkbox" value="guarda-roupa"> Guarda-Roupa</li>
+                    <li><input type="checkbox" value="air-fryer"> Air Fryer</li>
+                    <li><input type="checkbox" value="sapateira"> Sapateira</li>
+                    <li><input type="checkbox" value="mesa-escritorio"> Mesa de Escritório</li>
+                    <li><input type="checkbox" value="cadeira-escritorio"> Cadeira de Estritório</li>
+                </div>
+            </ul>
+            <div class="botao-container">
+                <button class="botao-presentes" id="botao-presentes">Salvar</button>
+            </div>
+        </section>
+
+        <section class="localizacao" id="localizacao">
+            <h2>Localização</h2>
+            <p>Veja abaixo o local onde o casamento será realizado:</p>
+            <div class="local-imagem">
+                <img src="images/sitio-umbuzeiro.png" alt="Foto Sítio Umbuzeiro">
+                <p>Sítio Umbuzeiro, Av. Tiradentes, N°175, Vila de Abrantes, Camaçari - BA </p>	
+            </div> 
+        </section>
+	</main>
+
+    <footer class="rodape">
+        <p>Website feito por Adriano de Paula - F & A, 2023. Todos os direitos reservados.&copy;</p>
+    </footer>    
 </body>
 </html>
